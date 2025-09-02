@@ -1,15 +1,19 @@
-N = int(input("Enter a number: "))
-count = 0
-num = (N)   
 
-if num == 0:   
-    count = 1
-else:
-    while num > 0:
-        count += 1
-        num //= 10
-
-print("Count of digits:", count)
 
 
 # take an integer N as input and print the count of that number
+
+N = int(input("Enter a no. : "))
+
+if N == 0:
+    print(1)
+elif(N < 0):
+     print("Please Enter a positive Number")
+else : 
+    count = 0
+    while N > 0:
+            last_digit = N % 10  
+            count += 1
+            N = N // 10
+    print(count)
+    
